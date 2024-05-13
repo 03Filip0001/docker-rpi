@@ -1,0 +1,8 @@
+services:
+  homeassistant:
+    env_file:
+      - path: ./homeassistant.env
+        required: true
+
+    container_name: homeassistant
+    image: homeassistant/home-assistant:${HOMEASSISTANT_TAG}

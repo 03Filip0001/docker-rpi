@@ -1,0 +1,9 @@
+services:
+  mysql:
+    env_file:
+      - path: ./mysql.env
+        required: true
+
+    container_name: mysql
+    image: mysql:${MYSQL_TAG}
+

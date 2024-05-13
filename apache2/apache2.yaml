@@ -1,0 +1,9 @@
+services:
+  apache2: 
+    env_file:
+      - path: ./apache2.env
+        required: true
+
+    container_name: apache2
+    image: ubuntu/apache2:${APACHE2_TAG}
+
