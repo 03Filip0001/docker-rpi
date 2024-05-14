@@ -4,6 +4,14 @@ services:
       - path: ./apache2.env
         required: true
 
+      - path: ./../server.env
+        required: true
+
     container_name: apache2
     image: ubuntu/apache2:${TAG}
 
+    network_mode: "host"
+
+    volumes:
+      - ./volumes/conf/apache2.conf:/etc/apache2/apache2.conf
+      - ./volumes/sites-available/:/etc/apache2/sites-available/
