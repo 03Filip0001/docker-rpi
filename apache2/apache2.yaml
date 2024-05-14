@@ -5,5 +5,5 @@ services:
         required: true
 
     container_name: apache2
-    image: ubuntu/apache2:${APACHE2_TAG}
+    image: ubuntu/apache2:${TAG}
 

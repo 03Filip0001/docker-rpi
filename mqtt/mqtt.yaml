@@ -5,4 +5,4 @@ services:
         required: true
 
     container_name: mqtt
-    image: eclipse-mosquitto:${MQTT_TAG}
+    image: eclipse-mosquitto:${TAG}

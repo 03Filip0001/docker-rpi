@@ -5,4 +5,4 @@ services:
         required: true
 
     container_name: homeassistant
-    image: homeassistant/home-assistant:${HOMEASSISTANT_TAG}
+    image: homeassistant/home-assistant:${TAG}

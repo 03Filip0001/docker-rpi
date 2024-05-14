@@ -5,5 +5,5 @@ services:
         required: true
 
     container_name: mysql
-    image: mysql:${MYSQL_TAG}
+    image: mysql:${TAG}
 

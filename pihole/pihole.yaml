@@ -5,5 +5,5 @@ services:
         required: true
 
     container_name: pihole
-    image: pihole:${PIHOLE_TAG}
+    image: pihole:${TAG}
 
