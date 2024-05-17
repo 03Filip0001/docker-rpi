@@ -10,8 +10,15 @@ services:
     container_name: apache2
     image: ubuntu/apache2:${TAG}
 
-    network_mode: "host"
+    ports:
+      - "80:80"
+      - "443:443"
 
     volumes:
       - ./volumes/conf/apache2.conf:/etc/apache2/apache2.conf
       - ./volumes/sites-available/:/etc/apache2/sites-available/
+      
+      - ./init/init.sh:/init/init.sh
+      - ./../services.env:/init/init.env
+
+    command: ["chmod +x /init/init.sh && sh /init/init.sh"]
