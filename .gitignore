@@ -2,3 +2,4 @@
 *.env
 !services.env
 .git_commands
+dynulog
