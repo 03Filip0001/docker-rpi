@@ -1,0 +1,13 @@
+services:
+  ddns:
+    build: ./
+
+    container_name: ddns
+    network_mode: "host"
+
+    volumes:
+      - ./volume:/config/
+    env_file:
+      - ./ddns.env
+
+    restart: unless-stopped
