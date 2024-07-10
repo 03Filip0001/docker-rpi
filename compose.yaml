@@ -1,6 +1,7 @@
 include:
-  - ./mqtt/mqtt.yaml
-  - ./mysql/mysql.yaml
-  - ./pihole/pihole.yaml
-  - ./apache2/apache2.yaml
-  - ./homeassistant/homeassistant.yaml
+  #- ./mqtt/mqtt.yaml
+  - ./ddns/ddns.yaml
+  #- ./mysql/mysql.yaml
+  #- ./pihole/pihole.yaml
+  #- ./apache2/apache2.yaml
+  #- ./homeassistant/homeassistant.yaml
