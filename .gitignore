@@ -2,4 +2,4 @@
 *.env
 !services.env
 .git_commands
-dynulog
+ddns/volume/dynulog
